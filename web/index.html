@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEFESTO</title>
+    <link rel="preload" href="CSS/estilos.css" as="style"> 
+    <link rel="stylesheet" href="CSS/estilos.css">  
+    <link rel="preload" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body> 
+    <main>
+        <h1 class="titulo">HEFESTO</h1>
+        <div class="container">
+            <div class="imagen-fac">
+                <img class="left-image" src="imagenes/Fuerza Aeroespacial Colombiana.jpeg"/>
+            </div>
+            <div class="imagen-logo">
+                <img class="right-image" src="imagenes/Logo_Hefesto.jpg"/>
+            </div>
+        </div> 
+        <section class="formulario">
+            <fieldset>
+                <form action="procesarFormulario" method="post">
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label for="usuario">Ingrese Usuario</label>
+                            <input class="input-text" type="text" id="usuario" name="usuario" required placeholder="Usuario"> 
+                        </div>
+                        <div class="campo">
+                            <label for="clave">Ingrese Contraseña</label>
+                            <input class="input-text" type="password" id="clave" name="clave" required placeholder="Contraseña">   
+                        </div>
+                        <div class="campo">
+                            <input type="submit" value="Ingresar">
+                        </div>
+                        <button class="registro1">
+                            <div>
+                                <label>Crear usuario</label>
+                            </div>  
+                        </button>
+                        <br>
+                        <button class="registro2">
+                            <div>
+                                <label>¿Olvido su contraseña?</label>
+                            </div>
+                        </button>
+                    </div>
+                </form>
+            </fieldset>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Información Adicional</h2>
+            <p>Contenido de la ventana modal...</p>
+        </div>
+    </div>
+</body>
+</html>
+

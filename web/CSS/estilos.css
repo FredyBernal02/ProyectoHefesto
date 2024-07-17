@@ -1,0 +1,277 @@
+:root {
+    --azul: #B2C3D4;
+    --gris: #4f5559;
+    --blanco: #ffffff;
+    --negro: #212121;
+}
+
+/* Globales*/
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 16px; /* 1 rem = 10px */
+    font-family: "Krub", sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden; /* Evitar desplazamiento horizontal */
+}
+
+.boton {
+    position:absolute;
+    top: 0rem;
+    right: 0rem;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    max-width: 100%; /* Limitar el ancho máximo del contenedor */
+    overflow-x: hidden; /* Evitar desplazamiento horizontal */
+}
+
+/* Imagenes */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    max-width: 100%; /* Limitar el ancho máximo del contenedor */
+    overflow-x: hidden; /* Evitar desplazamiento horizontal */
+}
+
+.imagen-fac {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150rem;
+    height: 85rem;
+    overflow: hidden;
+    opacity: 40%;
+    z-index: -1;
+}
+.left-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagen-fac::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+.imagen-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    position: absolute;
+    z-index: 1;
+}
+.right-image {
+    width: 65rem;
+    height: auto;
+    position: absolute;
+    top: -30rem;
+    right: -30rem;
+}
+
+.titulo {
+    position: absolute;
+    top: 0.5rem;
+    left: 5rem;
+    font-size: 6rem;
+    color: var(--negro);
+    z-index: 2;
+}
+
+/* Formulario */
+
+.formulario {
+    position: absolute;
+    top: 25rem;
+    right: 100rem;
+    background: rgba(60, 56, 56, 0.8);
+    padding: 8px;
+    margin: 0 auto;
+    border-radius: 10px;
+    z-index: 1; 
+}
+.registro1 {
+    margin-bottom: 1rem;
+}
+.registro1:hover  {
+    background-color: var(--azul);
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.registro2:hover {
+    background-color: var(--azul);
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1440px) {
+    .right-image {
+        width: 60rem;
+        top: -30rem;
+        right: -50rem;
+    }
+
+    .titulo {
+        font-size: 4rem;
+        left: 2rem;
+    }
+
+    .formulario {
+        top: 25rem;
+        right: 90rem;
+        padding: 10px;
+    }
+    #reset {
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 768px) {
+    .right-image {
+        width: 40rem;
+        top: -30rem;
+        right: -35rem;
+    }
+
+    .titulo {
+        font-size: 3rem;
+        left: 1rem;
+    }
+
+    .formulario {
+        top: 25rem;
+        right: 45rem;
+        width: 40%;
+        padding: 20px;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .right-image {
+        width: 25rem;
+        top: -34rem;
+        right: -13rem;
+    }
+
+    .titulo {
+        font-size: 2.5rem;
+        left: 0.5rem;
+    }
+
+    .formulario {
+        top: 40rem;
+        right: 2rem;
+        width: 90%;
+        padding: 15px;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.campo:nth-child(3),
+.campo:nth-child(4) {
+    grid-column: 1 / 1;
+}
+
+.campo {
+    margin-bottom: 3rem;
+}
+.campo label {
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+/* Modal styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 10000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0, 0, 0); 
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content p {
+    margin-bottom: 1rem;
+}
+
+

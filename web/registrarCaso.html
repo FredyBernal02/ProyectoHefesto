@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal del Administrador</title>
+    <link rel="preload" href="CSS/estilosAdmin.css" as="style"> 
+    <link rel="stylesheet" href="CSS/registrarCaso.css">
+    <link rel="preload" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+        
+    <header class="header">
+        <img src="imagenes/logo-fuerza-aerea.png" alt="Fuerza Aérea Colombiana" class="logo">
+        <span class="portal">Portal del administrador</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="line1" width="100" height="100" viewBox="0 0 24 24" stroke-width="0.2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 5l0 14" />
+        </svg>
+        <img src="imagenes/bandera.png" alt="Bandera" class="bandera">
+
+        <div>
+            <span class="cuenta">Cuenta</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="line2" width="60" height="60" viewBox="0 0 24 24" stroke-width="0.2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 5l0 14" />
+            </svg>
+            <a href="index.html">
+                <span class="user-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    </svg>
+                </span>
+            </a>
+            <span class="inicioSesion">Iniciar sesión</span>
+        </div>
+        
+    </header>
+    <aside class="barra">
+        <nav>
+            <ul>
+                <a href="admin.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home-2" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+                        <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                        <path d="M10 12h4v4h-4z" />
+                    </svg>
+                </a>
+               
+                <a href="documentos.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clipboard-text" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
+                        <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
+                        <path d="M9 12h6" />
+                        <path d="M9 16h6" />
+                    </svg>
+                </a>
+               
+                <a href="cronograma.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-month" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" />
+                        <path d="M16 3v4" />
+                        <path d="M8 3v4" />
+                        <path d="M4 11h16" />
+                        <path d="M7 14h.013" />
+                        <path d="M10.01 14h.005" />
+                        <path d="M13.01 14h.005" />
+                        <path d="M16.015 14h.005" />
+                        <path d="M13.015 17h.005" />
+                        <path d="M7.01 17h.005" />
+                        <path d="M10.01 17h.005" />
+                    </svg>
+                </a>
+
+                <a href="registrarCaso.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                        <path d="M9 12h6" />
+                        <path d="M12 9v6" />
+                    </svg>
+                </a>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-folder" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" />
+                    <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                </svg>
+            </ul>  
+        </nav>
+    </aside> <!--Finalización del aside -->
+
+    <div class="titulo">
+        <h1>Registrar Caso</h1>
+    </div>
+    <main class="main-content">
+        <h2>Formulario</h2>
+
+        <table>
+            <tr>
+                <th>Intervienen</th>
+                    <td>
+                        <input type="text" placeholder="Grado Apellidos y Nombres">
+                        <input type="text" placeholder="Cargo">
+                        <span class="plus-sign">+</span>
+                    </td>
+            </tr>
+
+            <tr>
+                <th>Asunto</th>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+
+            <tr>
+                <th>Al efecto se procedio asi:</th>
+                <td>
+                    <textarea></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Balance de repuestos</th>
+                <td>
+                    <table>
+                        <tr>
+                            <th>Repuesto</th>
+                            <th>Suministrados</th>
+                            <th>Reintegrados</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td rowspan="2"><span class="plus-sign">+</span></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Firmantes</th>
+                <td>
+                    <table>
+                        <tr>
+                            <td><input type="text" placeholder="Grado Apellidos y Nombres"></td>
+                            <td>Técnico Especilista Mantenimiento Armamento</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Grado Apellidos y Nombres"></td>
+                            <td>Técnico Especialista Almacen de Armamento</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Grado Apellidos y Nombres"></td>
+                            <td>Comandante Sección Soporte Administrativo</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Grado Apellidos y Nombres"></td>
+                            <td>Comandante Gruse 15</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
